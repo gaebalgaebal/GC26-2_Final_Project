@@ -92,6 +92,8 @@ $env:ASSESSMENT_LOCAL_DEV = "1"
 
 ## 테스트
 
+최신 배점별 결과와 측정 범위는 [전체 검증 보고서](docs/rubric-audit-2026-11-08.md)에 기록했습니다.
+
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 .\.venv\Scripts\python.exe -m pytest -q

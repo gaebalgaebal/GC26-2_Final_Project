@@ -4,7 +4,7 @@
 
 ## 자동 검증
 
-- `python -m pytest -q`: **20 passed** (서비스 설명·지원 범위 정정 회귀 검사 포함)
+- `python -m pytest -q`: **21 passed** (서비스 설명·지원 범위 정정 및 함수 정보 공개 방어 회귀 검사 포함)
 - `python -m pip check`: **No broken requirements found**
 - `git diff --check`: 오류 없음
 - 제공 정답 PDF를 별도로 읽어 10명 전원 점수를 재계산하고 채점 엔진과 대조: 일치

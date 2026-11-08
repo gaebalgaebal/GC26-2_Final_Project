@@ -78,6 +78,7 @@ def suspicious(text: str) -> bool:
                 r"(?:프롬프트|지침).*(?:무시|공개|출력|보여|잊|누설)",
                 r"(?:어떤|무슨|연결|목록|연결된|사용가능한).*(?:tool|도구)",
                 r"(?:tool|도구).*(?:연결|목록|이름|정의|스키마|공개|보여)",
+                r"(?:호출|연결|내부).*(?:함수|function).*(?:이름|목록|정의|스키마|나열)|(?:함수|function).*(?:영문이름|내부목록)",
                 r"(?:api.?key|api키|비밀키|환경변수|secrets|os\.environ)",
                 r"ignore.*(?:instructions|previous)|reveal.*(?:prompt|tools)|<\|im_start\|>"]
     return any(re.search(p, t) for p in patterns)

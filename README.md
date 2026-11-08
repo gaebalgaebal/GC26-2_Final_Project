@@ -3,7 +3,7 @@
 **202135706 구본준 · 생성형 인공지능 활용 최종평가**
 
 - GitHub: https://github.com/gaebalgaebal/GC26-2_Final_Project
-- **배포 URL: 아직 배포 전입니다. Community Cloud 배포 완료 후 실제 주소로 갱신합니다.**
+- **배포 URL: https://gc26-2finalprojectgit-fmcanmbf88crejstdduycz.streamlit.app/**
 - 평가 기간: **2026년 11월 11일 23:59 (한국 시간)까지** 서비스 유지
 - 평가자 collaborator 초대는 사용자 요청으로 보류 중입니다.
 

@@ -37,7 +37,7 @@ def clear_analysis():
 def landing():
     st.markdown('<div class="eyebrow">ENGLISH ASSESSMENT ASSISTANT</div>', unsafe_allow_html=True)
     st.markdown('''<div class="hero"><small>채점의 다음</small><h1>채점은 빠르게.<br>수업 준비는 깊이 있게.</h1>
-    <p>시험지, 정답표, OMR 응답을 올리면 성적 분석부터<br>학생들이 어려워한 유형의 새 문제까지 한 곳에서 준비합니다.</p></div>''', unsafe_allow_html=True)
+    <p>수능 영어 형식의 모의고사 문제지, 정답표, OMR 응답을 올리면<br>성적 분석부터 학생들이 어려워한 유형의 새 문제까지 준비합니다.</p></div>''', unsafe_allow_html=True)
     if st.button("평가 분석 시작하기 →", type="primary", use_container_width=False):
         st.switch_page(analysis_navigation)
     st.write("")

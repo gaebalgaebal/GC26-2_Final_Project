@@ -98,3 +98,15 @@ def test_lowest_ties_return_everyone(exam):
 def test_generated_schema_rejects_incomplete_question():
     with pytest.raises(ValueError):
         GeneratedQuestion(kind="빈칸", passage="short", prompt="?", choices=["a"], answer=6, explanation="x")
+
+
+def test_service_identity_and_correction_stay_within_scope(exam):
+    agent, memory = AssessmentAgent("test-no-api-call"), Memory()
+    memory.history = [{"role": "assistant", "content": "모든 과목의 시험을 지원합니다."}]
+    for prompt in ["이게 뭐하는 사이트야?", "영어학원이 아니라, 모의고사성적 분석아냐?", "모든 과목 다 돼?"]:
+        reply = agent.answer(prompt, exam, memory)
+        assert reply.route == "about" and reply.calls == 0
+        assert "모의고사 성적 분석" in reply.text
+        assert "45문항" in reply.text
+        assert "영어학원 시험" not in reply.text
+        assert "시험 종류와 관계없이" not in reply.text

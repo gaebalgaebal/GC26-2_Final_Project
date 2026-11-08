@@ -43,7 +43,7 @@
 ## 외부 연결·배포 상태
 
 - GitHub 저장소 push/admin 권한 확인
-- `jaypakdevkr` collaborator 초대 발송 완료, 수락 여부는 별도
+- `jaypakdevkr` collaborator 초대는 사용자 요청에 따라 대기 중 초대를 취소함. 현재 초대 보류 상태
 - 로컬 Streamlit 서버 실행 및 브라우저에서 소개/분석 페이지 표시 확인
 - 실제 파일 업로드부터 결과 초기화까지는 Streamlit AppTest로 검증
 - 브라우저 파일 선택 자동화가 작동하지 않았으며, 이후 기존 Chrome 제어도 URL을 확인할 수 없어 중단됨

@@ -5,7 +5,7 @@
 - GitHub: https://github.com/gaebalgaebal/GC26-2_Final_Project
 - **배포 URL: 아직 배포 전입니다. Community Cloud 배포 완료 후 실제 주소로 갱신합니다.**
 - 평가 기간: **2026년 11월 11일 23:59 (한국 시간)까지** 서비스 유지
-- 평가자: `jaypakdevkr`에게 저장소 collaborator 초대 발송
+- 평가자 collaborator 초대는 사용자 요청으로 보류 중입니다.
 
 문제지 PDF, 정답·배점 PDF와 학생 OMR 엑셀을 업로드하면 자동 채점하고 성적을 분석하는 두 페이지 웹 서비스입니다. 평가자는 화면에서 본인의 OpenAI API 키를 입력해 성적 기반 대화와 유사 문항 생성을 사용할 수 있습니다.
 
